@@ -19,3 +19,4 @@ spring:
   username : root
   password : 123456
 queue: producter1
+topic: topic1
