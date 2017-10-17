@@ -8,7 +8,7 @@ spring:
  jms:
   #listener:
    #max-concurrency: 10
-  pub-sub-domain: true
+  pub-sub-domain: true #指定jms发布模式，不配置默认为false，配置为true则为发布与订阅，不然则是点对点模式
  pool:
   enabled: true
   max-connections: 50
