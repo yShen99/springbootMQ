@@ -16,7 +16,7 @@ import com.entity.User;
 @Component
 @EnableScheduling
 public class MQProducter {
-	@Autowired
+/*	@Autowired
 	private JmsMessagingTemplate jmsMessagingTemplate;
 	@Autowired
 	private Queue queue;
@@ -26,5 +26,5 @@ public class MQProducter {
 		age++;
 		User user = new User(System.currentTimeMillis(),UUID.randomUUID().toString(),age);
 		jmsMessagingTemplate.convertAndSend(queue, JSONObject.toJSONString(user).toString());
-	}
+	}*/
 }

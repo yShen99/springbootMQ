@@ -1,13 +1,14 @@
 server:
- port: 8082
+ port: 8084
 spring:
  activemq:
   broker-url: tcp://127.0.0.1:61616
   user: admin
   password: admin
- #jms:
+ jms:
   #listener:
    #max-concurrency: 10
+  pub-sub-domain: true
  pool:
   enabled: true
   max-connections: 50
@@ -19,4 +20,4 @@ spring:
   username : root
   password : 123456
 queue: producter1
-topic: topic1
+topic: topic12
